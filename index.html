@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
+  <title>Coffee Clicker</title>
+</head>
+
+<body>
+  <div class="column-container">
+    <div class="column" id="columnLeft">
+      <div id="cafeTitle">City Climber Café</div>
+      <div class="container left">
+        <div class="counter-container">Coffee: <span id="coffee_counter">0</span></div>
+        <div class="cps-container"><span id="cps">0</span> coffee/second</div>
+        <div id="big_coffee">☕️</div>
+      </div>
+      <button id="restartGame">Restart Game</button>
+    </div>
+    <div class="column" id="columnRight">
+      <div class="column-header">Coffee Producers</div>
+      <div class="container right producer_container" id="producer_container">
+      </div>
+    </div>
+    <div class="column" id="columnFarRight">
+      <div class="column-header">Coffee Upgrades</div>
+      <div class="container right producer_container producer-column producer-stats" id="producer_container1">
+        <button class="upgradeButtons" id="coffeeGrinder" onclick="addCoffeeGrinder(event)">Coffee Grinder~~Cost: 10000</button>
+        <button class="upgradeButtons" id="cursorLevelUp" onclick="levelUpCursor(event)">Cursor Level Up~~Cost: 20000</button>
+        <button class="upgradeButtons" id="caffCursor" onclick="caffTheCursor(event)">Caffeinate Cursor~~Cost: 30000</button>
+        <div></div>
+      </div>
+    </div>
+  </div>
+  <script type="text/javascript" src="data.js"></script>
+  <script type="text/javascript" src="script.js"></script>
+  
+</body>
+
+</html>
